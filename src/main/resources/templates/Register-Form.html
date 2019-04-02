@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+</head>
+<body>
+<form th:action="@{/customers}" method="POST" th:object="${customer}">
+    <table>
+        <tr>
+            <td>
+                Imię:
+            </td>
+            <td>
+                <input type="text" th:field="${customer.name}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Nazwisko:
+            </td>
+            <td>
+                <input type="text" th:field="${customer.lastName}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Brand:
+            </td>
+            <td>
+                <input type="text" th:field="${customer.brand}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Register">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

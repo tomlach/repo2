@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Form</title>
+</head>
+<body>
+<form th:action="@{/campaigns}" method="POST" th:object="${promo}">
+    <table>
+        <tr>
+            <td>
+                tittle:
+            </td>
+            <td>
+                <input type="text" th:field="${promo.tittle}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                description:
+            </td>
+            <td>
+                <input type="text" th:field="${promo.description}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Brand:
+            </td>
+            <td>
+                <input type="text" th:field="${promo.brand}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                start:
+            </td>
+            <td>
+                <input type="text" th:field="${promo.start}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                end:
+            </td>
+            <td>
+                <input type="text" th:field="${promo.end}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ID:
+            </td>
+            <td>
+                <input type="text" th:field="${promo.customerID}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Register">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

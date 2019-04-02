@@ -1,0 +1,18 @@
+<body xmlns:th="http://www.w3.org/1999/xhtml">
+<form action="#" th:action="@{checked}" method="post">
+    <table style="border:1px solid black">
+        <tr>
+            <td>select</td>
+            <td>name</td>
+            <td>last name</td>
+        </tr>
+        <tr th:each="user : ${users}">
+            <td><input type="checkbox" th:name="idChecked" th:value="${user.id}"></td>
+            <td th:text="${user.name}"></td>
+            <td th:text="${user.lastName}"></td>
+        <tr>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+</form>
+</body>
