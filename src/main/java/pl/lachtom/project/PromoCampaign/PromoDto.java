@@ -1,16 +1,23 @@
-package pl.lachtom.project;
+package pl.lachtom.project.PromoCampaign;
 
 import java.time.LocalDate;
 
 public class PromoDto {
+    private Integer id;
     private String tittle;
     private String description;
     private String brand;
     private LocalDate start;
     private LocalDate end;
-
-
     private Integer customerID;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getTittle() {
         return tittle;

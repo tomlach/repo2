@@ -1,4 +1,4 @@
-package pl.lachtom.project.Cwiczenia;
+package pl.lachtom.project.aCwiczenia;
 
 public class User {
 

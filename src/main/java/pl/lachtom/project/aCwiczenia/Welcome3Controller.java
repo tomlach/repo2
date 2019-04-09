@@ -1,4 +1,4 @@
-package pl.lachtom.project.Cwiczenia;
+package pl.lachtom.project.aCwiczenia;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
